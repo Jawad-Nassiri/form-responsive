@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    height: 100vh;
+    background-image: url('../images/pexels-pixabay-33109.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 70%;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 300px auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 100px;
+}
+.container input,
+.container select{
+    width: 40%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin:  15px;
+}
+
+/* media query for medium device (tablets) 481px =>768px  */
+@media (min-width: 481px) and (max-width: 768px){
+    .container {
+        width: 98%;
+    }
+    .container input, .container select {
+        width: 45%;
+        padding-left: 15px;
+        margin:  7px;
+    }
+
+}
+
+
+
+
+/* media query for small device (phone)320px => 480px */
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container {
+        width: 98%;
+        height: 400px;
+        margin: 50px auto;
+        padding-top: 20px;
+    }
+    .container input{
+        width: 80%;
+        /* padding-left: 20px; */
+        margin-top: 10px;
+    }
+    .container select{
+        width: 38.5%;
+        margin: 10px 5px;
+        padding-left: 10px;
+    }
+}
+
